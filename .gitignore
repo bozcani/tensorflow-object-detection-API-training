@@ -1,0 +1,19 @@
+# Ignore data files.
+*.records
+
+# Ignore pyc and cache
+__pycache__
+*.pyc
+*.ipynb_checkpoints
+
+# Ignore models due to large size.
+/models/*
+!/models/README.md
+
+# Ignore saved model.
+saved_checkpoints/*
+!/saved_checkpoints/README.md
+
+# Ignore frozen graphs.
+frozen_graphs/*
+!/frozen_graphs/README.md
