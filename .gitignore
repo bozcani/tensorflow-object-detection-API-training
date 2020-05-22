@@ -17,3 +17,9 @@ saved_checkpoints/*
 # Ignore frozen graphs.
 frozen_graphs/*
 !/frozen_graphs/README.md
+
+# Ignore nohup out files
+*.out
+
+# Ignore this checkpoint folder.
+training_ssd_inception_v2_alet

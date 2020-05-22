@@ -2,13 +2,14 @@
 INPUT_TYPE=image_tensor
 
 #PIPELINE_CONFIG_PATH={path to pipeline config file}
-PIPELINE_CONFIG_PATH=configs/ssd_inception_v2_alet.config
+#PIPELINE_CONFIG_PATH=configs/ssd_inception_v2_alet.config
+PIPELINE_CONFIG_PATH=configs/faster_rcnn_resnet101_coco.config
 
 #TRAINED_CKPT_PREFIX={path to model.ckpt}
-TRAINED_CKPT_PREFIX=saved_checkpoints/model.ckpt-0
+TRAINED_CKPT_PREFIX=saved_checkpoints/model.ckpt-67098
 
 # OUTPUT DIR
-EXPORT_DIR=./
+EXPORT_DIR=frozen_graphs/alet_faster_rcnn_resnet101_coco_checkpoint_67098
 
 
 python export_inference_graph.py \

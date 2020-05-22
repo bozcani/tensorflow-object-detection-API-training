@@ -1,6 +1,6 @@
 import tensorflow as tf
 import sys
-sys.path.append("../API")
+sys.path.append("../ALET")
 
 from object_detection.utils import dataset_util
 
@@ -85,12 +85,12 @@ def create_tf_dataset(outname, dataset):
 
 
 
-train_dataset = ALET("../data/ALET/new_train","../data/ALET/new_train.json")      
-val_dataset = ALET("../data/ALET/new_val","../data/ALET/new_val.json")      
-test_dataset = ALET("../data/ALET/new_test","../data/ALET/new_test.json")      
+train_dataset = ALET("../ALET/new_train","../ALET/new_train.json")      
+val_dataset = ALET("../ALET/new_val","../ALET/new_val.json")      
+test_dataset = ALET("../ALET/new_test","../ALET/new_test.json")      
 
 
 
-#create_tf_dataset("alet_train.records", train_dataset)
+create_tf_dataset("alet_train.records", train_dataset)
 create_tf_dataset("alet_val.records", val_dataset)
-#create_tf_dataset("alet_test.records", test_dataset)
+create_tf_dataset("alet_test.records", test_dataset)
